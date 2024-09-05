@@ -1,0 +1,142 @@
+.container-home {
+    padding: 0 5rem;
+    margin-top: 5rem;
+}
+
+/* Activities */
+
+.activities-home {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.activities-title-home {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Activities grid styles */
+.activities-grid-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+}
+
+.no-decoration {
+    text-decoration: none;
+}
+
+.activity-card-home {
+    background-color: #FFF9E3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+}
+
+.activity-image-home {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.activity-card-home:hover .activity-image-home {
+    opacity: 0.3;
+}
+
+.activity-card-home:hover .overlay {
+    opacity: 1;
+}
+
+.detail-text {
+    background-color: #ff91a4;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.home-register {
+
+    max-width: 100%;
+    margin-top: 5rem;
+
+    & .custom-home {
+        display: block;
+        text-decoration: none;
+        max-width: 33%;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #f5e8e8;
+        border-color: #f5e8e8;
+        color: black;
+        font-weight: 700;
+        padding: 20px;
+        border-radius: 5%;
+    }
+}
+
+.custom-home:hover {
+    background-color: #e67e93;
+    border-color: #e67e93;
+    color: white;
+}
+
+.cities-home {
+    max-width: 100%;
+    margin: 5rem 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+    /* Activities Section */
+    .activities-grid-home {
+        grid-template-columns: 1fr;
+
+    }
+
+    .home-register {
+        max-width: 100%;
+
+        & .custom-home {
+            max-width: 100%;
+            padding: 20px;
+        }
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    /* Activities Section */
+    .activities-title-home {
+        font-size: 1.5rem;
+    }
+
+    .activity-title-home {
+        font-size: 1rem;
+    }
+
+    .activity-description-home {
+        font-size: 0.9rem;
+    }
+}

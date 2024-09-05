@@ -1,0 +1,96 @@
+.container-fluid {
+    padding: 0 20px;
+}
+
+/* Estilo de la tarjeta de carrito */
+.card-viewActivities {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+.card-header-view {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+.list-group-viewActivities {
+    padding: 10px;
+}
+
+.list-group-item {
+    border: none;
+    padding: 8px 16px;
+}
+
+.btn-remove {
+    background-color: transparent;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+}
+
+.card-body-view {
+    padding: 10px;
+}
+
+.btn-view {
+    background-color: #ff91a4;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-view:hover {
+    background-color: #e88191;
+}
+
+/* Estilo de la imagen y botón de la tarjeta de actividad */
+.col-md-6 img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.col-md-6 .btn-view {
+    margin-top: 20px;
+}
+
+/* Estilo del cuerpo de la tarjeta de descripción */
+.card-body {
+    padding: 20px;
+}
+
+.card-body h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.card-body h3 {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.card-body a {
+    color: #E88191;
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    text-decoration: none;
+    color: #dc3545;
+    border: 1px solid #dc3545
+}

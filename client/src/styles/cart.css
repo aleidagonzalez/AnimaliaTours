@@ -1,0 +1,85 @@
+/* cart.css */
+
+/* Contenedor principal del carrito en forma de card */
+.cart-card {
+    background-color: #FFF9E3;
+    /* Fondo de la card */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    /* Centra la card horizontalmente */
+    max-width: 600px;
+    /* Ancho máximo de la card */
+}
+
+/* Contenedor del carrito */
+.cart {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Contenido del carrito: asegura que crezca y ocupe el espacio disponible */
+.CartPage {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Fondo de las tarjetas (productos) */
+.carro {
+    background-color: #FFF9E3;
+    /* Fondo de la tarjeta */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+/* Estilo para el título del carrito */
+.carrito {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #6B6B7E;
+}
+
+/* Estilo para los botones */
+.btn-cart {
+    background-color: #ff91a4;
+    /* Color de fondo del botón */
+    color: #fff;
+    /* Color del texto del botón */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto;
+}
+
+.btn-cart:hover {
+    background-color: #e88191;
+    /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo para el botón de eliminar */
+.btn-remove {
+    background-color: #ff6b6b;
+    /* Color de fondo del botón de eliminar */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-remove:hover {
+    background-color: #f32020;
+    /* Color de fondo al pasar el mouse */
+}
